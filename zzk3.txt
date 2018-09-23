@@ -1,0 +1,73 @@
+1.
+
+2.def a(a1):
+	if a1 %2 == 0:
+		print("你输入的是偶数")
+	elif a1%2 ==1:
+		print("你输入的是奇数")
+	else:
+		print("你输入的不是整数")
+
+3.    （ 1）a=[]
+	 if len(a):
+		pass
+	else:
+		pass
+        （2）if list:
+    
+		pass
+	
+else:
+
+		pass
+
+4.       (1)lst = [1,2,4]
+	lst1 = map(lambda x: x * x *x,lst)
+	list(lst1)
+
+          (2)lst = [1,2,4]
+	lst1 = map(lambda x: x ** 3,lst)
+	list(lst1)
+
+5.	def a(x,y):
+		return x+y
+	from functools import reduce
+	reduce(a,[1,2,3,4])
+
+6.	li = [1,45,8,13,8,1,7]
+	lst = (x**2 for x in li)
+	list(lst)
+
+7.	a = [1,2,4,3,5,9,7]
+	b = [1,2,8,6]
+	print([l for l in a if l in b])
+
+8.         (1)n1 = 1
+	n2 = 5
+	n3 = 8
+	max_num = 0
+	if n1 > n2:
+		max_num = n1
+	if n1 > n3:
+		max_num = n1
+	else:
+		max_num = n3
+	else:
+		max_num = n2
+	if n2 > n3:
+		max_num = n2
+	else:
+		max_num = n3
+		print('最大值是%d'%max_num)
+	(2)if n1>n2:
+		max_num = n1
+	if max_num > n3:
+		print('the max_num is n1')
+	else:
+		print('the max_num is n3')
+	else:
+		max_num = n2
+	if max_num > n3:
+		print('the max_num is n2')
+	else:
+		print('the max_num is n3')
