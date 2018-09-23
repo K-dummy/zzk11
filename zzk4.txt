@@ -1,0 +1,25 @@
+1. 	__author__ = "Pyyankerp"
+	import random
+	import string
+	user_list = []
+	def login():
+	User_name = input("请您设置您的用户名：")
+	User_password = int(input("请您设置您想取几位数的密码："))
+	for i in range(User_password):
+		Your_pass = random.choice(string.ascii_letters + string.digits)
+		user_list.append(Your_pass)
+		Pass_result = "".join(user_list)
+	print(f"您设置的用户名为：{User_name}, 系统为您随机产生的密码为：{Pass_result}")
+login()
+
+2.	def fil(x):
+		for y in range(2,x):
+			if x%y==0:
+				return True
+				return False
+list(filter(fil,range(1,101)))
+
+3.	
+
+4.	ll = [1,43,5,6,3,546,65,4,34,3,45,4,3]
+	min(ll)
